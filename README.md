@@ -1,6 +1,6 @@
 ## Opis rozwiązania.
 
-Program ma odbierać i zapisywać dane lokalizacji urządzenia GPS.
+Program ma odbierać i zapisywać dane lokalizacji urządzeń GPS.
 
 Postanowiłem użyć platformy Web flux zamiast Web, ponieważ uznałem, że mogę oczekiwać
 wysokiej liczby zapytań na sekundę, przez co kontener Tomcat nie będzie dobrym rozwiązaniem.
