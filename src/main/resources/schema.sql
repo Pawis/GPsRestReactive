@@ -1,0 +1,1 @@
+create table Location (id int primary key AUTO_INCREMENT ,deviceId varchar(10) , latitude int,longitude int);
