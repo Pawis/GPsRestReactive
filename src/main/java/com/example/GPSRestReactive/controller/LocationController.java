@@ -1,5 +1,7 @@
 package com.example.GPSRestReactive.controller;
 
+import javax.validation.Valid;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -22,7 +24,7 @@ public class LocationController {
 	
 	
 	@PostMapping("/post")
-	public Mono<Location >createLocation(@RequestBody Location location) {
+	public Mono<Location >createLocation(/* @Valid */ @RequestBody Location location) {
 		
 		return locationService.saveLocationToDatabase(location);
 	}
