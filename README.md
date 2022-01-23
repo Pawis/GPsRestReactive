@@ -10,7 +10,7 @@ watka na każde zapytanie, przez co idealnie nadaje się do tak dużej liczby za
 Dodatkowów użyłem reaktywnej bazy daych (R2DBC – H2) do zapisywania lokalizacji urządzeń przez
 co uzyskałem nieblokujący ciąg pracy wątków.
 
-Strwożyłem też warstwę serwisowa, która implementuje interfejs, przez co możemy w łatwy sposób ją 
+Stwożyłem też warstwę serwisowa, która implementuje interfejs, przez co możemy w łatwy sposób ją 
 rozszerzyć i użyć Dependency Injection do testów bądź podmiany.
 
 Do sprawdzania liczby użytych wątków i testowania aplikacji pod obciążeniem użyłem VisualVM i Apache JMeter.
