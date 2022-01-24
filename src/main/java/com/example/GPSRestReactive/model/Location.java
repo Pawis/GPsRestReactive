@@ -12,12 +12,12 @@ public class Location {
 
 	@Id
 	private int id;
-	
-	// @Pattern(regexp = "[\\s]*[0-9]*[1-9]+", message = "deviceid must be a number")
+
+	@Pattern(regexp = "[\\s]*[0-9]*[1-9]+", message = "deviceid must be a number")
 	private String deviceid;
-	// @Min(value = 0, message = "Invalid latitude(below zero)")
+	@Min(value = 0, message = "Invalid latitude(below zero)")
 	private int latitude;
-	// @Min(value = 0, message = "Invalid longitude(below zero)")
+	@Min(value = 0, message = "Invalid longitude(below zero)")
 	private int longitude;
 
 	public Location() {

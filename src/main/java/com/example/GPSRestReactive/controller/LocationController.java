@@ -24,7 +24,7 @@ public class LocationController {
 	
 	
 	@PostMapping("/post")
-	public Mono<Location >createLocation(/* @Valid */ @RequestBody Location location) {
+	public Mono<Location >createLocation( @Valid @RequestBody Location location) {
 		
 		return locationService.saveLocationToDatabase(location);
 	}
